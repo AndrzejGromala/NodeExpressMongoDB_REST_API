@@ -1,0 +1,30 @@
+GET http://localhost:5000/companies
+
+###
+
+GET http://localhost:5000/companies/60e74831b1f36c3844913d29
+
+###
+
+POST http://localhost:5000/companies
+Content-Type: application/json
+
+{
+    "companyName": "SAP",
+    "companyLocation": "Dublin North",
+    "phoneNumber": "25555555",
+    "yearEstablished": "1999"
+}
+
+###
+
+DELETE http://localhost:5000/companies/60e74831b1f36c3844913d29
+
+###
+
+PATCH http://localhost:5000/companies/60e74831b1f36c3844913d29
+Content-Type: application/json
+
+{
+    "phoneNumber": "666666666"
+}

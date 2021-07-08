@@ -1,0 +1,16 @@
+This is a REST API created with Node.js, Express and MongoDB.
+In order to run it you need to have a MongoDB installed and running.
+Run the app by using "node index.js" 
+At the start there is no data in the MongoDB.
+In order to add a company record use 
+
+POST http://localhost:5000/companies
+Content-Type: application/json
+
+{
+    "companyName": "SAP",
+    "companyLocation": "Dublin North",
+    "phoneNumber": "25555555",
+    "yearEstablished": "1999"
+}
+sample or change data to whatever you like.
